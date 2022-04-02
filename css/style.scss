@@ -1,0 +1,59 @@
+@import "./variables";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: $primary_color;
+    height: 100vh;
+    h1{
+        font-size: 25px;
+        color: white;
+    }
+    #input-field{
+        border-radius: 10px;
+        border: none;
+    }
+    #submit-btn{
+        border: none;
+        margin-top: 20px;
+        width: 50px;
+        height: 30px;
+        padding: 3px;
+        border-radius: 10px;
+        background-color: white;
+        color: $primary_color;
+        &:hover{
+            background-color: $primary_color;
+            color: white;
+            cursor: pointer;
+            border: 1px solid white;
+            transition: 0.5s;
+        }
+    }
+    .todos{
+        overflow: scroll;
+        border-radius: 10px;
+        margin-top: 20px;
+        width: 50%;
+        height: 50%;
+        background-color: rgb(69, 69, 71);
+        div{
+            color: white;
+            height: fit-content;
+            width: 100%;
+            padding: 5px;
+            text-align: center;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}
